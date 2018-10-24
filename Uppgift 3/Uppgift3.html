@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let radie = prompt("Skriv in cirkelns radie:");
+circle(radie);
+
+function circle(radie){
+
+let omkrets = 2 * Math.PI * radie;
+let area = Math.PI * Math.pow(radie,2);
+alert("Omkrets: " + omkrets.toFixed(1) +"\nArea: " + area.toFixed(1));
+
+}
+
+</script>
+</body>
+</html>
