@@ -1,7 +1,7 @@
 function randomDice(){  //Skapar ett tal mellan 1-6 och avrundar
 let array = [];
 for (let i = 0; i < 1000; i++) {
-let number = Math.floor(Math.random() * 6) +1;  
+let number = Math.floor(Math.random() * 6) + 1;  
 array.push(number);
 }
 return array;   

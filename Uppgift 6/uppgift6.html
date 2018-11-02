@@ -7,19 +7,28 @@
 <body>
 <p id ="answer"></p>
 <script>
+let bool = true;
+while(bool){
 let number =prompt("Skriv in en siffra mellan 1 och 1000");
 factorial(number);
 function factorial(number){   //Räknar ut fakulitet
-if (number >= 1 && number<= 1000){
+if (number >= 1 && number<= 1000){ 
  for (let i = number-1; i >= 1; i--) {
     number = number * i;  
- }
-document.getElementById("answer").innerHTML = number;  //Visa resulatet i webbläsare
+    }
+    if(number!== Infinity){  //Visar svaret i webbläsaren
+    document.getElementById("answer").innerHTML = number;    
+    bool = false;
+    }
+    else if(number === Infinity){
+    alert("Fel! Talet blir infinity")
+    }
 }
-else
-document.getElementById("answer").innerHTML = "Fel. Du skrev inte en siffra mellan 1 och 1000";
+    else{
+     alert("Fel. Du skrev inte en siffra mellan 1 och 1000");
 }
-
+}
+}
 </script>
     
 </body>
